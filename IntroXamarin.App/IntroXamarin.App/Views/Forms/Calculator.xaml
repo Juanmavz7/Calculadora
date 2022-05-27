@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IntroXamarin.App.Views.Forms.Calculator">
+    <ContentPage.Content>
+        <ScrollView HorizontalOptions="FillAndExpand"
+                    VerticalOptions="EndAndExpand"
+                    BackgroundColor="WhiteSmoke">
+
+            <StackLayout Margin="5"
+                         
+                         Spacing="10">
+
+
+
+
+                <Entry BackgroundColor="White" 
+                     x:Name="visu"
+                  
+                     
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                       HorizontalTextAlignment="End"
+                       TextColor="Black">
+
+
+
+                </Entry>
+
+
+
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Row="0" Grid.Column="0" Text="7" Clicked="atrapardato"
+                            CornerRadius="5"
+                             BackgroundColor="White"
+                            FontSize="Large"
+                            FontAttributes="Bold" />
+
+
+                    <Button Grid.Row="0" Grid.Column="1" Text="8"   Clicked="atrapardato"
+                             CornerRadius="5"
+                             BackgroundColor="White"
+                            FontSize="Large"
+                            FontAttributes="Bold" />
+
+
+                    <Button Grid.Row="0" Grid.Column="2" Text="9"  Clicked="atrapardato"
+                             CornerRadius="5"
+                             BackgroundColor="White"
+                            FontSize="Large"
+                            FontAttributes="Bold"  />
+
+
+                    <Button Grid.Row="0" Grid.Column="3" Text="/"   Clicked="atraparope"
+                             CornerRadius="5"
+                            BackgroundColor="DeepSkyBlue"
+                            FontSize="Large"
+                            FontAttributes="Bold" />
+
+
+                    <Button Grid.Row="1" Grid.Column="0" Text="4"  Clicked="atrapardato"
+                             CornerRadius="5"
+                            BackgroundColor="White"
+                            FontSize="Large"
+                            FontAttributes="Bold" />
+
+
+                    <Button Grid.Row="1" Grid.Column="1" Text="5"  Clicked="atrapardato"
+                             CornerRadius="5"
+                            BackgroundColor="White"
+                            FontSize="Large"
+                            FontAttributes="Bold" />
+
+
+                    <Button Grid.Row="1" Grid.Column="2" Text="6"  Clicked="atrapardato"
+                             CornerRadius="5"
+                            BackgroundColor="White"
+                            FontSize="Large"
+                            FontAttributes="Bold" />
+
+
+                    <Button Grid.Row="1" Grid.Column="3" Text="X"  Clicked="atraparope"
+                             CornerRadius="5"
+                             BackgroundColor="DeepSkyBlue"
+                            FontSize="Large"
+                            FontAttributes="Bold" />
+
+                    <Button Grid.Row="2" Grid.Column="0" Text="1"  Clicked="atrapardato"
+                             CornerRadius="5"
+                            BackgroundColor="White"
+                            FontSize="Large"
+                            FontAttributes="Bold" />
+
+                    <Button Grid.Row="2" Grid.Column="1" Text="2"  Clicked="atrapardato"
+                             CornerRadius="5"
+                            BackgroundColor="White"
+                            FontSize="Large"
+                            FontAttributes="Bold"/>
+
+
+                    <Button Grid.Row="2" Grid.Column="2" Text="3"  Clicked="atrapardato"
+                             CornerRadius="5"
+                            BackgroundColor="White"
+                            FontSize="Large"
+                            FontAttributes="Bold"/>
+
+
+                    <Button Grid.Row="2" Grid.Column="3" Text="-"  Clicked="atraparope"
+                             
+                             CornerRadius="5"
+                            BackgroundColor="DeepSkyBlue"
+                            FontSize="Large"
+                            FontAttributes="Bold"/>
+
+
+                    <Button Grid.Row="3" Grid.Column="0" Text="C"  Clicked="atraparope"
+
+                             CornerRadius="5"
+                              BackgroundColor="White"
+                            FontSize="Large"
+                            FontAttributes="Bold"/>
+
+
+                    <Button Grid.Row="3" Grid.Column="1" Text="0"  Clicked="atrapardato"
+                            
+                             CornerRadius="5"
+                              BackgroundColor="White"
+                            FontSize="Large"
+                            FontAttributes="Bold"/>
+
+
+                    <Button Grid.Row="3" Grid.Column="2" Text="."  Clicked="atraparope"
+                             CornerRadius="5"
+                              BackgroundColor="White"
+                            FontSize="Large"
+                            FontAttributes="Bold"/>
+
+
+
+
+                    <Button Grid.Row="3" Grid.Column="3" Text="+"  Clicked="atraparope"
+                             CornerRadius="5"
+                             BackgroundColor="DeepSkyBlue"
+                            FontSize="Large"
+                            FontAttributes="Bold"/>
+
+
+
+                </Grid>
+
+
+
+                <Button Text="=" Padding="20" 
+                        TextColor="White" 
+                        BackgroundColor="Gray" 
+                        CornerRadius="5" 
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                           />
+                <Label
+                    />
+                <Label
+                    />
+
+
+                <!--<ActivityIndicator x:Name="Indicator" IsRunning="True" />-->
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
